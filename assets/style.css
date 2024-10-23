@@ -7,7 +7,7 @@
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
     #intro {
-      margin-top: -58.59px;
+      margin-top: -75px;
     }
   }
 /*background color for navbar home*/
@@ -20,5 +20,5 @@
 }
 /*margin for content home*/
 #home{
-    margin: 300px 0 0 0;
+    margin: 40vh 0 0 0;
 }
