@@ -48,7 +48,7 @@ let sukaPartner = document.getElementById('suka-partner');
 let wcSelf = document.getElementById('wc-self');
 let wcPartner = document.getElementById('wc-partner');
 
-
+//function pilihan yang benar
 function right() {
     console.log('genderSelf:', genderSelf.value);
     console.log('genderPartner:', genderPartner.value);
@@ -86,10 +86,16 @@ function right() {
     }
 }
 
+function sameGender(){
+    if (genderPartner.value === genderSelf.value){
+        alert('kata gua lu berdua mending tobat dah.. \nDOSA KOCAK!!?!!');
+    }
+}
 
-//declare the function
+//declare the click button
 button.addEventListener('click', (event) => {
     event.preventDefault();
     right();
+    sameGender();
     console.log(genderPartner.value);
 })
