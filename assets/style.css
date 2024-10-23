@@ -44,6 +44,10 @@
     background-color: rgba(119, 159, 193, 0.2);
 }
 
-#hide{
+#hide-form, #hide-result{
     background-color: #eae5e7;
+    padding-bottom: 100px;
+}
+.card-text{
+    height: 100px;
 }
