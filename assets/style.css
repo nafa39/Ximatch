@@ -4,3 +4,21 @@
     height: 100vh;
     width: 100vw;
 }
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+    #intro {
+      margin-top: -58.59px;
+    }
+  }
+/*background color for navbar home*/
+#navbar{
+    background-color: rgba(182, 200, 214, 0.5);
+}
+/*background color for footer home*/
+#footer{
+    background-color: rgba(91, 139, 180, 0.5);
+}
+/*margin for content home*/
+#home{
+    margin: 300px 0 0 0;
+}
