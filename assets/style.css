@@ -26,32 +26,35 @@
 #other{
     background-color:#5b8bb4;
 }
-
-#body{
+/*background and padding all*/
+#body, #body-services{
     background-color: #eae5e7;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+/*padding container*/
 .container{
     padding-top: 50px;
 }
-
-#button{
+/*background button*/
+#button, #submit, #button-test{
     background-color: #779fc1;
 }
-
+/*background for card*/
 .card{
     background-color: rgba(119, 159, 193, 0.2);
 }
-
-#hide-form, #hide-result{
+/*background and padding services*/
+#hide, #hide-result{
     background-color: #eae5e7;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
+/*sizing card text*/
 .card-text{
     height: 100px;
 }
-
+/*padding for row*/
 .row{
     padding-top: 30px;
 }
