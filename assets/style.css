@@ -27,7 +27,14 @@
     background-color:#5b8bb4;
 }
 /*background and padding all*/
-#body, #body-services{
+#body{
+    background-color: #eae5e7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+#body-services{
     background-color: #eae5e7;
     padding-top: 100px;
     padding-bottom: 100px;
