@@ -86,10 +86,45 @@ function right() {
     }
 }
 
+//function same gender
 function sameGender(){
     if (genderPartner.value === genderSelf.value){
         alert('kata gua lu berdua mending tobat dah.. \nDOSA KOCAK!!?!!');
     }
+}
+
+//function result
+function result(){
+    let total = 5;
+    if (buburPartner.value === buburSelf.value){
+        total += 1;
+    }else{
+        total += 0;
+    }
+    if (lampuPartner.value === lampuSelf.value){
+        total += 1;
+    }else{
+        total += 0;
+    }
+    if (posisiPartner.value === posisiSelf.value){
+        total += 1;
+    }else{
+        total += 0;
+    }
+    if (sukaPartner.value === sukaSelf.value){
+        total += 1;
+    }else{
+        total += 0;
+    }
+    if (wcPartner.value === wcSelf.value){
+        total += 1;
+    }else{
+        total += 0;
+    }
+    console.log(`${(total/10)*100}%`);
+    document.getElementById('result-text').innerHTML = `You are ${(total/10)*100}% compatible with your partner`;
+    document.getElementById('result-progres').innerHTML = `${(total/10)*100}%`;
+    document.getElementById('result-progres').style = `width: ${(total/10)*100}%`;
 }
 
 //declare the click button
@@ -97,5 +132,8 @@ button.addEventListener('click', (event) => {
     event.preventDefault();
     right();
     sameGender();
-    console.log(genderPartner.value);
+    result();
+    document.getElementById('hide-result').style.display = "block";
+    document.getElementById('hide').style.display = "none";
+    
 })
