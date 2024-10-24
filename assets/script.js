@@ -122,6 +122,7 @@ function result(){
         total += 0;
     }
     console.log(`${(total/10)*100}%`);
+    //show in HTML progres and text
     document.getElementById('result-text').innerHTML = `You are ${(total/10)*100}% compatible with your partner`;
     document.getElementById('result-progres').innerHTML = `${(total/10)*100}%`;
     document.getElementById('result-progres').style = `width: ${(total/10)*100}%`;
