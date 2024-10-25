@@ -53,31 +53,31 @@ function right() {
     console.log('genderSelf:', genderSelf.value);
     console.log('genderPartner:', genderPartner.value);
     
-    if (genderPartner.value.trim() === 'Jenis Kelamin' || genderSelf.value.trim() === 'Jenis Kelamin') {
+    if (genderPartner.value.trim() === '--Select Option--' || genderSelf.value.trim() === '--Select Option--') {
         console.log('pilih jenis kelamin');
         alert("Pilih Jenis Kelamin Yang Benar!!!");
     }
-    else if (zodiakPartner.value.trim() === 'Zodiak' || zodiakSelf.value.trim() === 'Zodiak'){
+    else if (zodiakPartner.value.trim() === '--Select Option--' || zodiakSelf.value.trim() === '--Select Option--'){
         console.log('pilih zodiak');
         alert("Pilih Zodiak Yang Benar!!!");
     }
-    else if (buburPartner.value.trim() === 'Bubur' || buburSelf.value.trim() === 'Bubur'){
+    else if (buburPartner.value.trim() === '--Select Option--' || buburSelf.value.trim() === '--Select Option--'){
         console.log('pilih bubur');
         alert("Pilih Bubur Yang Benar!!!");
     }
-    else if (lampuPartner.value.trim() === 'Lampu' || lampuSelf.value.trim() === 'Lampu'){
+    else if (lampuPartner.value.trim() === '--Select Option--' || lampuSelf.value.trim() === '--Select Option--'){
         console.log('pilih lampu');
         alert("Pilih Lampu Yang Benar!!!");
     }
-    else if (posisiPartner.value.trim() === 'Posisi' || posisiSelf.value.trim() === 'Posisi'){
+    else if (posisiPartner.value.trim() === '--Select Option--' || posisiSelf.value.trim() === '--Select Option--'){
         console.log('pilih posisi');
         alert("Pilih Posisi Yang Benar!!!");
     }
-    else if (sukaPartner.value.trim() === 'Suka Ini' || sukaSelf.value.trim() === 'Suka Ini'){
+    else if (sukaPartner.value.trim() === '--Select Option--' || sukaSelf.value.trim() === '--Select Option--'){
         console.log('pilih suka');
         alert("Pilih Kesukaan Yang Benar!!!");
     }
-    else if (wcPartner.value.trim() === 'Wc' || wcSelf.value.trim() === 'Wc'){
+    else if (wcPartner.value.trim() === '--Select Option--' || wcSelf.value.trim() === '--Select Option--'){
         console.log('pilih wc');
         alert("Pilih WC Yang Benar!!!");
     }
