@@ -53,37 +53,49 @@ function right() {
     //console.log('genderSelf:', genderSelf.value);
     //console.log('genderPartner:', genderPartner.value);
     
-    if (genderPartner.value.trim() === '--Select Option--' || genderSelf.value.trim() === '--Select Option--') {
+    if (genderSelf.value === '--Select Option--') {
         console.log('pilih jenis kelamin');
         alert("Pilih Jenis Kelamin Yang Benar!!!");
-        return;
+        return false;
     }
-    else if (zodiakPartner.value.trim() === '--Select Option--' || zodiakSelf.value.trim() === '--Select Option--'){
+    else if (genderPartner.value === '--Select Option--'){
+        console.log('pilih jenis kelamin');
+        alert("Pilih Jenis Kelamin Yang Benar!!!");
+        return false;
+    }
+    else if (zodiakPartner.value === '--Select Option--' || zodiakSelf.value === '--Select Option--'){
         console.log('pilih zodiak');
         alert("Pilih Zodiak Yang Benar!!!");
+        return false;
     }
-    else if (buburPartner.value.trim() === '--Select Option--' || buburSelf.value.trim() === '--Select Option--'){
+    else if (buburPartner.value === '--Select Option--' || buburSelf.value === '--Select Option--'){
         console.log('pilih bubur');
         alert("Pilih Bubur Yang Benar!!!");
+        return false;
     }
-    else if (lampuPartner.value.trim() === '--Select Option--' || lampuSelf.value.trim() === '--Select Option--'){
+    else if (lampuPartner.value === '--Select Option--' || lampuSelf.value === '--Select Option--'){
         console.log('pilih lampu');
         alert("Pilih Lampu Yang Benar!!!");
+        return false;
     }
-    else if (posisiPartner.value.trim() === '--Select Option--' || posisiSelf.value.trim() === '--Select Option--'){
+    else if (posisiPartner.value === '--Select Option--' || posisiSelf.value === '--Select Option--'){
         console.log('pilih posisi');
         alert("Pilih Posisi Yang Benar!!!");
+        return false;
     }
-    else if (sukaPartner.value.trim() === '--Select Option--' || sukaSelf.value.trim() === '--Select Option--'){
+    else if (sukaPartner.value === '--Select Option--' || sukaSelf.value === '--Select Option--'){
         console.log('pilih suka');
         alert("Pilih Kesukaan Yang Benar!!!");
+        return false;
     }
-    else if (wcPartner.value.trim() === '--Select Option--' || wcSelf.value.trim() === '--Select Option--'){
+    else if (wcPartner.value === '--Select Option--' || wcSelf.value === '--Select Option--'){
         console.log('pilih wc');
         alert("Pilih WC Yang Benar!!!");
+        return false;
     }
     else {
         console.log('You have selected a valid option');
+        return true;
     }
 }
 
@@ -91,7 +103,9 @@ function right() {
 function sameGender(){
     if (genderPartner.value === genderSelf.value){
         alert('kata gua lu berdua mending tobat dah.. \nDOSA KOCAK!!?!!');
+        return false;
     }
+    return true;
 }
 
 //function result
@@ -132,10 +146,11 @@ function result(){
 //declare the click button
 button.addEventListener('click', (event) => {
     event.preventDefault();
-    right();
-    sameGender();
-    result();
-    document.getElementById('hide-result').style.display = "block";
-    document.getElementById('hide').style.display = "none";
-    
-})
+    if (right()){
+        if(sameGender()){
+            result()
+            document.getElementById('hide-result').style.display = "block";
+            document.getElementById('hide').style.display = "none";
+        }
+    }
+});
