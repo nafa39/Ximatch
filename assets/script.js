@@ -56,6 +56,7 @@ function right() {
     if (genderPartner.value.trim() === '--Select Option--' || genderSelf.value.trim() === '--Select Option--') {
         console.log('pilih jenis kelamin');
         alert("Pilih Jenis Kelamin Yang Benar!!!");
+        return document.getElementById('hide').style.display = "block";
     }
     else if (zodiakPartner.value.trim() === '--Select Option--' || zodiakSelf.value.trim() === '--Select Option--'){
         console.log('pilih zodiak');
