@@ -50,13 +50,13 @@ let wcPartner = document.getElementById('wc-partner');
 
 //function pilihan yang benar
 function right() {
-    console.log('genderSelf:', genderSelf.value);
-    console.log('genderPartner:', genderPartner.value);
+    //console.log('genderSelf:', genderSelf.value);
+    //console.log('genderPartner:', genderPartner.value);
     
     if (genderPartner.value.trim() === '--Select Option--' || genderSelf.value.trim() === '--Select Option--') {
         console.log('pilih jenis kelamin');
         alert("Pilih Jenis Kelamin Yang Benar!!!");
-        return document.getElementById('hide').style.display = "block";
+        return;
     }
     else if (zodiakPartner.value.trim() === '--Select Option--' || zodiakSelf.value.trim() === '--Select Option--'){
         console.log('pilih zodiak');
