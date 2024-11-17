@@ -31,7 +31,11 @@
 #home{
     margin: 40vh 0 0 0;
 }
-/*background color for navbar and footer all*/
+/*background color for footer all*/
+#other1{
+    background-color:#5b8bb4;
+}
+/*background color for navbar all*/
 #other{
     background-color:#5b8bb4;
 }
